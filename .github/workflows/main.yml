@@ -1,0 +1,21 @@
+name: Test Workflow
+
+# Triggers the workflow when code is pushed to the 'main' branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    # This job will run on an Ubuntu machine
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Add a step with your email address as the name
+      - name: 23f2004752@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
